@@ -6,6 +6,7 @@ from subtitle import (
 
 from telegram import (
     Update,
+    ParseMode,
     InlineKeyboardButton,
     InlineKeyboardMarkup
 )
@@ -13,7 +14,7 @@ from telegram import (
 from telegram.ext import CallbackContext
 
 def start(update: Update, context: CallbackContext):
-    context.bot.send_message(chat_id=update.effective_chat.id, text=f"<b>Hi {update.effective_user.first_name}!, My Name Is 𝗔𝗟𝗟 𝗦𝗨𝗕𝗧𝗜𝗧𝗟𝗘 𝗕𝗢𝗧 🥳\n\nI'm A <u>𝗧𝗘𝗟𝗚𝗥𝗔𝗠 𝗦𝗨𝗕𝗧𝗜𝗧𝗟𝗘 𝗦𝗘𝗔𝗥𝗖𝗛 𝗥𝗢𝗕𝗢𝗧.</u>\n\nSend Me Any 𝗠𝗢𝗩𝗜𝗘 𝗡𝗔𝗠𝗘 & I'll Search My Database If It's Avaliable.\n\n𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 𝗧𝗼 @Modzilla 𝗜𝗳 𝗬𝗼𝘂 𝗟𝗼𝘃𝗲 𝗧𝗵𝗶𝘀 𝗕𝗼𝘁 ♥️.</b>, parse_mode="HTML")
+    context.bot.send_message(chat_id=update.effective_chat.id, text=f"<b>Hi {update.effective_user.first_name}!, My Name Is 𝗔𝗟𝗟 𝗦𝗨𝗕𝗧𝗜𝗧𝗟𝗘 𝗕𝗢𝗧 🥳\n\nI'm A <u>𝗧𝗘𝗟𝗚𝗥𝗔𝗠 𝗦𝗨𝗕𝗧𝗜𝗧𝗟𝗘 𝗦𝗘𝗔𝗥𝗖𝗛 𝗥𝗢𝗕𝗢𝗧.</u>\n\nSend Me Any 𝗠𝗢𝗩𝗜𝗘 𝗡𝗔𝗠𝗘 & I'll Search My Database If It's Avaliable.\n\n𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 𝗧𝗼 @Modzilla 𝗜𝗳 𝗬𝗼𝘂 𝗟𝗼𝘃𝗲 𝗧𝗵𝗶𝘀 𝗕𝗼𝘁 ♥️.</b>, parse_mode="html")
 
 def searching(update: Update, context: CallbackContext):
     if update.message.via_bot != None:
