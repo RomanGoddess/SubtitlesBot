@@ -38,8 +38,8 @@ def inlinequery(update, context):
     query = update.inline_query.query
     inline = [
         [
-            InlineKeyboardButton("Our Group", url="https://telegram.dog/Keralasbots"),
-            InlineKeyboardButton("Our Channel", url="https://telegram.dog/Keralabotsnews")
+            InlineKeyboardButton("𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 🚸", url="https://telegram.dog/LeechZone"),
+            InlineKeyboardButton("𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 👥", url="https://t.me/joinchat/AAAAAE-44AkxSyqIMj1tdQ")
         ]
     ]
     results = [
@@ -49,7 +49,7 @@ def inlinequery(update, context):
             title="Get the File",
             mime_type="application/zip",
             reply_markup=InlineKeyboardMarkup(inline),
-            caption="©️ @GetSubtitles_bot\n\nUse @UnzipTGBot for unzipping this zip file or download the file and unzip manually"
+            caption="©️ @AllSubtitleBot\n\nUse @UnzipTGBot for unzipping this zip file or download the file and unzip manually"
         )
     ]
     update.inline_query.answer(results)
