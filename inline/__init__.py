@@ -38,8 +38,8 @@ def inlinequery(update, context):
     query = update.inline_query.query
     inline = [
         [
-            InlineKeyboardButton("𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 🚸", url="https://telegram.dog/LeechZone"),
-            InlineKeyboardButton("𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 👥", url="https://t.me/joinchat/AAAAAE-44AkxSyqIMj1tdQ")
+            InlineKeyboardButton("𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣", url="https://telegram.dog/LeechZone"),
+            InlineKeyboardButton("𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url="https://t.me/joinchat/AAAAAE-44AkxSyqIMj1tdQ")
         ]
     ]
     results = [
